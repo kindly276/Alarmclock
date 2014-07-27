@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="@dimen/small_snooze_image"
+    android:background="@drawable/borderlayout" >
+
+    <com.thao.alarmclock.MyTextViewgoo
+        android:id="@+id/txtcaptcha"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_snooze_time"
+        android:layout_marginBottom="@dimen/small_snooze_image"
+        android:background="#fff"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="@dimen/small_snooze_button" />
+
+    <View
+        android:id="@+id/idview1"
+        style="@style/Divider3"
+        android:layout_below="@+id/txtcaptcha" />
+
+    <EditText
+        android:id="@+id/editnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_snooze_time"
+        android:layout_below="@+id/idview1"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/captcha" />
+
+    <View
+        android:id="@+id/idview2"
+        style="@style/Divider3"
+        android:layout_below="@+id/editnhap"
+        android:layout_marginTop="@dimen/small_snooze_title" />
+
+    <LinearLayout
+        android:id="@+id/linea1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_snooze_time"
+        android:layout_below="@+id/idview2"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <LinearLayout
+            android:id="@+id/layoutpass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/txtpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/ic_fa_undo" />
+        </LinearLayout>
+
+        <View style="@style/Divider4" />
+
+        <LinearLayout
+            android:id="@+id/layouttatam"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/txtsoud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_volume_muted" />
+        </LinearLayout>
+
+        <View style="@style/Divider4" />
+
+        <LinearLayout
+            android:id="@+id/layoutxoa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/txtClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/ic_action_remove" />
+        </LinearLayout>
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idview3"
+        style="@style/Divider3"
+        android:layout_below="@+id/linea1" />
+
+    <LinearLayout
+        android:id="@+id/linea2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_snooze_time"
+        android:layout_below="@+id/idview3"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txtback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textSize="@dimen/small_snooze_title" />
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txtsubmit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textSize="@dimen/small_snooze_title" />
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idview4"
+        style="@style/Divider3"
+        android:layout_below="@+id/linea2" />
+
+</RelativeLayout>

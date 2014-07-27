@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_save_alarm_details"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="Save"/>
+    <item
+        android:id="@+id/action_cancel_alarm_details"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="Cancel"/>
+
+</menu>

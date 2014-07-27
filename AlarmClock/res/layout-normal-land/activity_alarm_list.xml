@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/normal_activity_vertical_margin"
+    android:paddingLeft="@dimen/normal_activity_horizontal_margin"
+    android:paddingRight="@dimen/normal_activity_horizontal_margin"
+    android:paddingTop="@dimen/normal_activity_vertical_margin"
+    tools:context=".AlarmListActivity" >
+
+    <com.thao.alarmclock.DigitalClockm
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_canhtruoc_ngaythang"
+        android:textColor="#00BFFF"
+        android:textSize="@dimen/normal_ngaythang" />
+
+    <com.thao.alarmclock.DigitalClock
+        android:id="@+id/analogClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analogClock1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_padding_item"
+        android:textColor="#00BFFF"
+        android:textSize="@dimen/normal_thoigian" />
+
+    <TextView
+        android:id="@+id/nextalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analogClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_canhtruoc_ngaythang"
+        android:textColor="#fff"
+        android:textSize="@dimen/normal_snooze_sizebutton" />
+
+    <TextView
+        android:id="@+id/thoigianconlai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextalarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_canhtruoc_ngaythang"
+        android:textColor="#fff"
+        android:textSize="@dimen/normal_snooze_sizebutton" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/thoigianconlai"
+        android:layout_marginTop="@dimen/normal_canhtruoc_thoigian" />
+
+</RelativeLayout>

@@ -1,0 +1,363 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/borderlayout"
+    android:padding="@dimen/normal_land_canhtruoc_thoigian" >
+
+    <View
+        android:id="@+id/idview1"
+        style="@style/Divider3"
+        android:layout_below="@+id/textlevel" />
+
+    <LinearLayout
+        android:id="@+id/linea1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_land_snooze_time"
+        android:layout_below="@+id/idview1"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txtbaitoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/CANCEL"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <EditText
+            android:id="@+id/editinput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/answer"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idView02"
+        style="@style/Divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linea1" />
+
+    <LinearLayout
+        android:id="@+id/linea2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_land_snooze_time"
+        android:layout_below="@+id/idView02"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View
+            style="@style/Divider4"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idView03"
+        style="@style/Divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linea2" />
+
+    <LinearLayout
+        android:id="@+id/linea3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_land_snooze_time"
+        android:layout_below="@+id/idView03"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="4"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="5"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View
+            style="@style/Divider4"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idView04"
+        style="@style/Divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linea3" />
+
+    <LinearLayout
+        android:id="@+id/linea4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_land_snooze_time"
+        android:layout_below="@+id/idView04"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="7"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="8"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View
+            style="@style/Divider4"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="9"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idView05"
+        style="@style/Divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linea4" />
+
+    <LinearLayout
+        android:id="@+id/linea5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_land_snooze_time"
+        android:layout_below="@+id/idView05"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <LinearLayout
+            android:id="@+id/layouttatam"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/txtsoud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_volume_muted" />
+        </LinearLayout>
+
+        <View
+            style="@style/Divider4"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <TextView
+            android:id="@+id/txttru"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View
+            style="@style/Divider4"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <TextView
+            android:id="@+id/txt0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idView06"
+        style="@style/Divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linea5" />
+
+    <LinearLayout
+        android:id="@+id/linea6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_land_snooze_time"
+        android:layout_below="@+id/idView06"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <LinearLayout
+            android:id="@+id/layoutpass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/txtpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/ic_fa_undo" />
+        </LinearLayout>
+
+        <View style="@style/Divider4" />
+
+        <LinearLayout
+            android:id="@+id/layoutxoa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/txtClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/ic_action_remove" />
+        </LinearLayout>
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idView07"
+        style="@style/Divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linea6" />
+
+    <LinearLayout
+        android:id="@+id/linea7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_land_snooze_time"
+        android:layout_below="@+id/idView07"
+        android:orientation="horizontal" >
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txtback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+
+        <TextView
+            android:id="@+id/txtsubmit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textSize="@dimen/normal_land_snooze_title" />
+
+        <View style="@style/Divider4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idView08"
+        style="@style/Divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linea7" />
+
+</RelativeLayout>

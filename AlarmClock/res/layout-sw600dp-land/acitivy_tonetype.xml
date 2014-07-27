@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lvtypetone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sw600_martop_lvtypetone" >
+    </ListView>
+
+    <View
+        android:id="@+id/divider8"
+        style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw600_sizetime"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtcancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="@string/CANCEL" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TimePicker
+        android:id="@+id/alarm_details_time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sw600_margintop_one" />
+
+    <View
+        android:id="@+id/divider8"
+        style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw600_size45"
+        android:layout_below="@+id/divider8"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtsave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="@string/save" />
+
+        <View
+            android:id="@+id/View01"
+            style="@style/Divider1" />
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="@string/CANCEL" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_margintop_one"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linear"
+        android:background="@drawable/holo_pressed_blue" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_size45"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtsave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="#00BFFF" />
+
+        <View
+            android:id="@+id/View01"
+            style="@style/Divider1" />
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#00BFFF" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/divider9"
+        android:isScrollContainer="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:checked="true"
+                android:text="@string/details_repeat_weekly" />
+
+            <View
+                android:id="@+id/divider1"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_weekly" />
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/divider1"
+                android:checked="true"
+                android:text="@string/details_sunday" />
+
+            <View
+                android:id="@+id/divider2"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_sunday" />
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/alarm_details_repeat_sunday"
+                android:layout_below="@+id/divider2"
+                android:checked="true"
+                android:text="@string/details_monday" />
+
+            <View
+                android:id="@+id/divider3"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_monday" />
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/alarm_details_repeat_monday"
+                android:layout_below="@+id/alarm_details_repeat_monday"
+                android:checked="true"
+                android:text="@string/details_tuesday" >
+            </com.thao.alarmclock.CustomSwitch>
+
+            <View
+                android:id="@+id/divider4"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_tuesday" />
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/alarm_details_repeat_tuesday"
+                android:layout_below="@+id/divider4"
+                android:checked="true"
+                android:text="@string/details_wednesday" />
+
+            <View
+                android:id="@+id/divider5"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_wednesday" />
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/alarm_details_repeat_wednesday"
+                android:layout_below="@+id/divider5"
+                android:checked="true"
+                android:text="@string/details_thursday" />
+
+            <View
+                android:id="@+id/divider6"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_thursday" />
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/alarm_details_repeat_thursday"
+                android:layout_below="@+id/divider6"
+                android:checked="true"
+                android:text="@string/details_friday" />
+
+            <View
+                android:id="@+id/divider7"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_friday" />
+
+            <com.thao.alarmclock.CustomSwitch
+                android:id="@+id/alarm_details_repeat_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/alarm_details_repeat_friday"
+                android:layout_below="@+id/divider7"
+                android:checked="true"
+                android:text="@string/details_saturday" />
+
+            <View
+                android:id="@+id/divider8"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_repeat_saturday" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

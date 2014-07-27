@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trigg.alarmclock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.thao.alarmclock.AlarmListActivity"
+            android:label="Alarm" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.AlarmScreen"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.RepeatListActivity"
+            android:label="Repeat Settting"
+            android:textColor="#00BFFF"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.AlarmDetailsActivity"
+            android:label="Alarm Setting"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.thao.alarmclock.AlarmSetting"
+            android:label="Setting"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.thao.alarmclock.SnoozeAtivity"
+            android:label="Snooze Setting"
+            android:textColor="#00BFFF"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.WaitingActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.VolumeActivity"
+            android:label="Volume Setting"
+            android:textColor="#00BFFF"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.TimePick"
+            android:label="Alarm Time"
+            android:textColor="#00BFFF"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.AlarmListTypeTone"
+            android:label="Sound Type"
+            android:textColor="#00BFFF"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.thao.alarmclock.AlarmSnoozemethod"
+            android:label="Snooze method"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="com.thao.alarmclock.Alarmdismissmethod"
+            android:label="Dismiss method"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="com.thao.alarmclock.Alarmsettinglanguage"
+            android:label="Settings Language "
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="com.thao.alarmclock.AlarmLevelMath"
+            android:label="Level Math"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="com.thao.alarmclock.Alarmmath"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.thao.alarmclock.AlarmCaptcha"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+
+        <service
+            android:name="com.thao.alarmclock.Services.AlarmService"
+            android:enabled="true" />
+        <service
+            android:name="com.thao.alarmclock.Services.MusicService"
+            android:enabled="true" >
+        </service>
+
+        <receiver android:name="com.thao.alarmclock.AlarmManagerHelper" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

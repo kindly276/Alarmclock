@@ -1,0 +1,422 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AlarmDetailsActivity" >
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw600_margintop_one"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linear"
+        android:background="@drawable/holo_pressed_blue" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw600_size45"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_fa_undo" />
+
+            <TextView
+                android:id="@+id/txtCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/changestate"
+                android:gravity="center_vertical"
+                android:text="@string/CANCEL"
+                android:textColor="#00BFFF" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/View01"
+            style="@style/Divider2" />
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changestate"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_fa_save" />
+
+            <TextView
+                android:id="@+id/txtsave"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/save"
+                android:textColor="#00BFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/divider9"
+        android:isScrollContainer="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sw600_padding"
+            tools:context=".AlarmDetailsActivity" >
+
+            <LinearLayout
+                android:id="@+id/alarm_time_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_label_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/details_alarm_time"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_label_time_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="@string/details_alarm_typetone_default" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_time_container" />
+
+            <EditText
+                android:id="@+id/alarm_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_marginTop="@dimen/sw600_margintop_two"
+                android:ems="10"
+                android:hint="@string/details_alarm_name" />
+
+            <View
+                android:id="@+id/divider1"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_details_name"
+                android:layout_marginTop="@dimen/sw600_margintop_two" />
+
+            <LinearLayout
+                android:id="@+id/alarm_typetone_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/divider1"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_label_tonetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/details_alarm_typetone"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_label_typetone_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="@string/details_alarm_typetone_default"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_typetone_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_ringtone_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/divider2"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_label_tone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/details_alarm_tone"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_label_tone_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="@string/details_alarm_tone_default"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_ringtone_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_repeat_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/alarm_ringtone_container"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_label_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/repeat"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_label_repeat_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="default"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider4"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_repeat_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_snooze_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/divider4"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_label_snooze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/snoozeduration"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_label_snooze_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="10 minutes"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider5"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_snooze_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_vibrate_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/divider5"
+                android:layout_marginBottom="@dimen/sw600_padding_item"
+                android:layout_marginTop="@dimen/sw600_padding_item"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/alarm_label_vibrate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:text="@string/Vibrate"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <CheckBox
+                    android:id="@+id/check_vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider6"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_vibrate_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_volume_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/divider6"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_label_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/AlarmVolume"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_label_volume_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="@string/mottram"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider7"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_volume_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_snoozemethod_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/divider7"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_snoozemethod_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/SnoozeMethod"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_snoozemethod_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="Press on screen buuton"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider8"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_snoozemethod_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_dismissmethod_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/divider8"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_dismissmethod_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/DismissMethod"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_dismissmethod_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="Press on screen buuton"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider10"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_dismissmethod_container" />
+
+            <LinearLayout
+                android:id="@+id/alarm_levelmath_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/divider10"
+                android:background="@drawable/view_touch_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alarm_level_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/Mathlevel"
+                    android:textSize="@dimen/sw600_textsize_one" />
+
+                <TextView
+                    android:id="@+id/alarm_level_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="Easy"
+                    android:textSize="@dimen/sw600_textsize_two" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider11"
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarm_level_container" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
